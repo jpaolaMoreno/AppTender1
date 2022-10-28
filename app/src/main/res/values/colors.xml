@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorsecundario">#2f8757</color>
+    <color name="coloracento">#008036</color>
+    <color name="colorfondo">#7bc49c</color>
+    <color name="colorletra">#5b9d3c</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
