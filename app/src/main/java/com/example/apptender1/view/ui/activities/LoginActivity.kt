@@ -1,5 +1,6 @@
 package com.example.apptender1.view.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -19,6 +20,19 @@ class LoginActivity : AppCompatActivity() {
             iniciobutton = findViewById(R.id.BInicio)
             registrobutton = findViewById(R.id.BRegistro)
             recuperarbutton = findViewById(R.id.BRecuperar)
+
+            iniciobutton.setOnClickListener {
+                startActivity(Intent(this, HomeActivity::class.java ))
+
+            }
+
+            registrobutton.setOnClickListener {
+                startActivity(Intent( this, RegistroActivity::class.java))
+            }
+
+            recuperarbutton.setOnClickListener{
+                startActivity(Intent(this, RegistroActivity::class.java))
+            }
     }
 }
 
