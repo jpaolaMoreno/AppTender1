@@ -4,6 +4,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorsecundario"
     tools:context=".view.ui.activities.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="125dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="168dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/opensanslight"
+        android:text="BIENVENIDO"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <ImageButton
+        android:id="@+id/imgBajuste"
+        android:layout_width="109dp"
+        android:layout_height="107dp"
+        android:backgroundTint="@color/colorsecundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862"
+        app:srcCompat="@drawable/ajustes" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:backgroundTint="@color/colorsecundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604"
+        app:srcCompat="@drawable/tienda" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="125dp"
+        android:layout_height="90dp"
+        android:backgroundTint="@color/colorsecundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@drawable/datos" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="121dp"
+        android:layout_height="123dp"
+        android:backgroundTint="@color/colorsecundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616"
+        app:srcCompat="@drawable/carro" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:backgroundTint="@color/colorsecundario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/comentarios" />
+
+    <TextView
+        android:id="@+id/txtPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Pedidos"
+        android:fontFamily="@font/opensanslight"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/txtTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tienda"
+        android:fontFamily="@font/opensanslight"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/txtComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentarios"
+        android:fontFamily="@font/opensanslight"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <TextView
+        android:id="@+id/txtDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Datos"
+        android:fontFamily="@font/opensanslight"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/txtAjustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        android:fontFamily="@font/opensanslight"
+        android:textColor="@color/colorfondo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
