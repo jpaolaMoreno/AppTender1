@@ -6,6 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.activities.RecuperarActivity">
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="262dp"
+        android:layout_height="62dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="Nueva Contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <EditText
+        android:id="@+id/editTextNombre2"
+        android:layout_width="262dp"
+        android:layout_height="62dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="179dp"
@@ -17,60 +49,21 @@
         app:layout_constraintVertical_bias="0.213"
         app:srcCompat="@drawable/logo" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="79dp"
-        android:layout_height="76dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857"
-        app:srcCompat="@mipmap/telefono" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="81dp"
-        android:layout_height="71dp"
-        android:layout_marginBottom="164dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/mail" />
-
-    <Button
-        android:id="@+id/BRecuTelefono"
-        android:layout_width="181dp"
-        android:layout_height="62dp"
-        android:text="Solicitar Código "
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:backgroundTint ="@color/coloracento"
-        android:fontFamily="@font/opensanslight"
-        app:layout_constraintBottom_toTopOf="@+id/BRecuEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.704"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
-
     <Button
         android:id="@+id/BRecuEmail"
         android:layout_width="181dp"
         android:layout_height="62dp"
-        android:text="Solicitar Código "
+        android:backgroundTint="@color/coloracento"
+        android:fontFamily="@font/opensanslight"
+        android:text="Recuperar"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:backgroundTint ="@color/coloracento"
-        android:fontFamily="@font/opensanslight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <TextView
         android:id="@+id/txtRecuperacion"
