@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grahn"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.apptender1.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_misdatosFragment"
+            app:destination="@id/misdatosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historialFragment"
+            app:destination="@id/historialFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mipedidoFragment"
+            app:destination="@id/mipedidoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ajustesFragment"
+            app:destination="@id/ajustesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misdatosFragment"
+        android:name="com.example.apptender1.view.ui.fragments.misdatosFragment"
+        android:label="fragment_misdatos"
+        tools:layout="@layout/fragment_misdatos" />
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="com.example.apptender1.view.ui.fragments.historialFragment"
+        android:label="fragment_historial"
+        tools:layout="@layout/fragment_historial" />
+    <fragment
+        android:id="@+id/mipedidoFragment"
+        android:name="com.example.apptender1.view.ui.fragments.mipedidoFragment"
+        android:label="fragment_mipedido"
+        tools:layout="@layout/fragment_mipedido" />
+    <fragment
+        android:id="@+id/tiendaFragment"
+        android:name="com.example.apptender1.view.ui.fragments.tiendaFragment"
+        android:label="fragment_tienda"
+        tools:layout="@layout/fragment_tienda" />
+    <fragment
+        android:id="@+id/ajustesFragment"
+        android:name="com.example.apptender1.view.ui.fragments.ajustesFragment"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/comentariosFragment"
+        android:name="com.example.apptender1.view.ui.fragments.comentariosFragment"
+        android:label="fragment_comentarios"
+        tools:layout="@layout/fragment_comentarios" />
+</navigation>
