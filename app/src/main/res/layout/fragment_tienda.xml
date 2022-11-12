@@ -3,14 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.tiendaFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,5 +21,25 @@
             android:src="@drawable/logootro">
         </ImageView>
     </RelativeLayout>
-    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorsecundario"
+        android:layout_marginTop="550dp"
+        app:menu="@menu/menu_navigation_bar"
+        app:backgroundTint="@color/white"
+        tools:ignore="MissingConstrains">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
 </FrameLayout>

@@ -48,7 +48,26 @@
         android:id="@+id/tiendaFragment"
         android:name="com.example.apptender1.view.ui.fragments.tiendaFragment"
         android:label="fragment_tienda"
-        tools:layout="@layout/fragment_tienda" />
+        tools:layout="@layout/fragment_tienda" >
+        <action
+            android:id="@+id/action_tiendaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_mipedidoFragment"
+            app:destination="@id/mipedidoFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_misdatosFragment"
+            app:destination="@id/misdatosFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_historialFragment"
+            app:destination="@id/historialFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ajustesFragment"
         android:name="com.example.apptender1.view.ui.fragments.ajustesFragment"
@@ -58,5 +77,24 @@
         android:id="@+id/comentariosFragment"
         android:name="com.example.apptender1.view.ui.fragments.comentariosFragment"
         android:label="fragment_comentarios"
-        tools:layout="@layout/fragment_comentarios" />
+        tools:layout="@layout/fragment_comentarios" >
+        <action
+            android:id="@+id/action_comentariosFragment_to_ajustesFragment"
+            app:destination="@id/ajustesFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_mipedidoFragment"
+            app:destination="@id/mipedidoFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_mipedidoFragment2"
+            app:destination="@id/mipedidoFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_misdatosFragment"
+            app:destination="@id/misdatosFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_mipedidoFragment3"
+            app:destination="@id/mipedidoFragment" />
+    </fragment>
 </navigation>

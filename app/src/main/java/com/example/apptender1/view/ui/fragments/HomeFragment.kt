@@ -16,17 +16,41 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view= inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val cardLib=view.findViewById<ImageView>(R.id.cardTienda)
-        cardLib.setOnClickListener{
+        val cardLib = view.findViewById<ImageView>(R.id.cardTienda)
+        cardLib.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_tiendaFragment)
+
+        }
+        val cardComent = view.findViewById<ImageView>(R.id.cardcomentario)
+        cardComent.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_comentariosFragment)
+        }
+        val cardajust = view.findViewById<ImageView>(R.id.cardAjuste)
+        cardajust.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_ajustesFragment)
+
+        }
+        val cardpedido = view.findViewById<ImageView>(R.id.cardCarro)
+        cardpedido.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_mipedidoFragment)
+
+        }
+        val cardatos = view.findViewById<ImageView>(R.id.cardDatos)
+        cardatos.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_misdatosFragment)
+
+        }
+        val cardhistoria = view.findViewById<ImageView>(R.id.cardHispedido)
+        cardhistoria.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_historialFragment)
+
         }
     }
-
 }

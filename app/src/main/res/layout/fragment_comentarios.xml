@@ -3,28 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.comentariosFragment">
 
-    <LinearLayout
+
+    <ImageView
+        android:id="@+id/cardComentario"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
-        android:orientation="vertical">
+        android:layout_height="187dp"
+        android:src="@drawable/logootro">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="1dp"
-            android:background="@drawable/theme_gradients_background">
+    </ImageView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/logootro">
-            </ImageView>
-        </RelativeLayout>
-    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextcomentario"
+        android:layout_width="396dp"
+        android:layout_height="510dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="Registre sus comentarios"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorsecundario"
+        android:layout_marginTop="550dp"
+        app:menu="@menu/menu_navigation_bar"
+        app:backgroundTint="@color/white"
+        tools:ignore="MissingConstrains">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
 </FrameLayout>

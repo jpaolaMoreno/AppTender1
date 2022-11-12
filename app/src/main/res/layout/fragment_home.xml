@@ -63,6 +63,7 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardDatos"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/misdatos">
@@ -101,9 +102,10 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardHispedido"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/historial">
+                            android:src="@drawable/historialpedido">
 
                         </ImageView>
 
@@ -140,6 +142,7 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardCarro"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/carrito">
@@ -219,6 +222,7 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardAjuste"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/ajustes">
@@ -258,6 +262,7 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardcomentario"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/comentarios">
