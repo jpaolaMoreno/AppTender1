@@ -10,7 +10,7 @@
         android:id="@+id/imageView3"
         android:layout_width="149dp"
         android:layout_height="145dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logofin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.117" />
 
     <EditText
-        android:id="@+id/editTextNombre"
+        android:id="@+id/LoginCorreo"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
@@ -35,14 +35,14 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/LoginContrasena"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:fontFamily="@font/opensanslight"
         android:hint="Contraseña"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

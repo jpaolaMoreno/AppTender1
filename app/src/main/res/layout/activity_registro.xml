@@ -26,7 +26,7 @@
     <ImageView
         android:id="@+id/fotoregistro"
         android:layout_width="match_parent"
-        android:layout_height="194dp"
+        android:layout_height="100dp"
         android:src="@drawable/perfilcamara"
         app:layout_constraintBottom_toTopOf="@+id/BRegistrar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/txtReUsuario"
+        android:id="@+id/ReUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensanslight"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNombre"
+        android:id="@+id/registreNombre"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:layout_marginBottom="328dp"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.055" />
 
     <EditText
-        android:id="@+id/editTextNumero"
+        android:id="@+id/registreNumero"
         android:layout_width="265dp"
         android:layout_height="60dp"
         android:background="@drawable/stylo_borde_editext"
@@ -76,11 +76,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
+        app:layout_constraintTop_toBottomOf="@+id/registreNombre"
         app:layout_constraintVertical_bias="0.113" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/registreEmail"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
@@ -92,11 +92,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumero"
+        app:layout_constraintTop_toBottomOf="@+id/registreNumero"
         app:layout_constraintVertical_bias="0.176" />
 
     <EditText
-        android:id="@+id/editTextContraseña"
+        android:id="@+id/registreContraseña"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/registreEmail"
         app:layout_constraintVertical_bias="0.421" />
 
 

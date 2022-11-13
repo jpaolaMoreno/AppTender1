@@ -7,14 +7,14 @@
     tools:context=".view.ui.activities.RecuperarActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/RecuperarContrasena"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:fontFamily="@font/opensanslight"
         android:hint="Nueva Contraseña"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.662" />
 
     <EditText
-        android:id="@+id/editTextNombre2"
+        android:id="@+id/RecuperarCorreo"
         android:layout_width="262dp"
         android:layout_height="62dp"
         android:background="@drawable/stylo_borde_editext"
