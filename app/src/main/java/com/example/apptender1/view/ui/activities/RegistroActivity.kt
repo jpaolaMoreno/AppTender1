@@ -11,6 +11,8 @@ import com.example.apptender1.R
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class RegistroActivity : AppCompatActivity() {
@@ -23,7 +25,6 @@ class RegistroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
         firebaseAuth= Firebase.auth
-
         registrarbutton = findViewById(R.id.BRegistrar)
         val correo=findViewById<EditText>(R.id.registreEmail)
         val contrasena=findViewById<EditText>(R.id.registreContraseña)
@@ -36,11 +37,12 @@ class RegistroActivity : AppCompatActivity() {
 
         }
         private fun crearcuenta(correo:String, contrasena:String){
+
             firebaseAuth.createUserWithEmailAndPassword(correo,contrasena)
                 .addOnCompleteListener(this) {
                     Task-> if(Task.isSuccessful){
                         Toast.makeText(baseContext,"Cuenta Creada", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, HomeActivity::class.java))
+                        startActivity(Intent(this, HomeActivity::class.java))
                 }else{
                     Toast.makeText(baseContext, "Error creación", Toast.LENGTH_SHORT).show()
                 }

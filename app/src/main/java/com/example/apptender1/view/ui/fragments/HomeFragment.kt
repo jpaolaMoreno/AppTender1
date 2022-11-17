@@ -47,9 +47,9 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_misdatosFragment)
 
         }
-        val cardhistoria = view.findViewById<ImageView>(R.id.cardHispedido)
-        cardhistoria.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_historialFragment)
+        val cardmap = view.findViewById<ImageView>(R.id.cardmap)
+        cardmap.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_mapaFragment)
 
         }
     }

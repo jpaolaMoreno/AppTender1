@@ -11,8 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/coloracento"
-        android:backgroundTint="@color/colorfondo"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -26,7 +26,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/logootro">
+                android:src="@drawable/logofin">
 
             </ImageView>
         </RelativeLayout>
@@ -57,7 +57,7 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:background="@color/teal_700"
+                        android:background="@color/coloracento"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -75,44 +75,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:text="Mis Datos"
-                            android:textAlignment="center"
-                            android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_row="0"
-                        android:layout_column="0"
-                        android:background="@color/teal_700"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:id="@+id/cardHispedido"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/historialpedido">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:text="Historial"
                             android:textAlignment="center"
                             android:textSize="18dp"
                             android:textStyle="bold">
@@ -135,7 +97,47 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:background="@color/teal_700"
+                        android:background="@color/coloracento"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/cardmap"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/mapa">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="mapa"
+                            android:textAlignment="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:background="@color/coloracento"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -175,7 +177,7 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:background="@color/teal_700"
+                        android:background="@color/coloracento"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -215,7 +217,7 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:background="@color/teal_700"
+                        android:background="@color/coloracento"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -255,7 +257,7 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="0"
-                        android:background="@color/teal_700"
+                        android:background="@color/coloracento"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="16dp">

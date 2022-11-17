@@ -1,50 +1,57 @@
 package com.example.apptender1.view.adapter
 
+import android.content.Context
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ExpandableListView.OnChildClickListener
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.apptender1.R
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.apptender1.model.frutas
+import com.squareup.picasso.Picasso
 
-class LibraryAdapter: RecyclerView.Adapter<LibraryAdapter.ViewHolder>() {
+class LibraryAdapter(private val context:Context):RecyclerView.Adapter<LibraryAdapter.ViewHolder>(){
 
-    override fun onCreateViewHolder (viewGroup: ViewGroup, i: Int): ViewHolder {
+    private var frutaslista= mutableListOf<frutas>()
 
-        val v=LayoutInflater.from(viewGroup.context).inflate(R.layout.car_view_librery, viewGroup, false)
-        return ViewHolder(v)
+    fun setListData(data:MutableList<frutas>){
+        frutaslista=data
     }
 
-    inner class ViewHolder(ItemView: View):RecyclerView.ViewHolder(ItemView){
-        var itemImagen: ImageView
-        var itemTitle:  TextView
-        var itemprecio: TextView
-        var itemCaract: TextView
+    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
 
-        init{
-            itemImagen=ItemView.findViewById(R.id.image)
-            itemTitle=ItemView.findViewById(R.id.tittle)
-            itemprecio=ItemView.findViewById(R.id.precio)
-            itemCaract=ItemView.findViewById(R.id.comentprod)
+        val v= LayoutInflater.from(viewGroup.context).inflate(R.layout.car_view_librery, viewGroup, false)
+        return ViewHolder(v)
+
+    }
+
+    inner class ViewHolder(ItemView: View):RecyclerView.ViewHolder(ItemView) {
+        fun binWew(fruta: frutas) {
+
+            itemView.findViewById<TextView>(R.id.tittle).text = fruta.titulo
+            itemView.findViewById<TextView>(R.id.precio).text = fruta.precio
+            Picasso.with(context).load(fruta.image).into(itemView.findViewById<ImageView>(R.id.image))
+            itemView.findViewById<TextView>(R.id.descripcion).text = fruta.descripcion
         }
     }
 
-    val titles= arrayOf("Banano","Manzana","Mango", "Guanabana","Brocoli", "Tomates")
-    val precio= arrayOf("$3.500","$7.800","$5.400", "$8.500","$1.500","$2.500")
-    val image= arrayOf(R.drawable.banano, R.drawable.manzanas, R.drawable.mango, R.drawable.guanabana, R.drawable.brocoli, R.drawable.tomates)
-    val caract= arrayOf("Precio por kilo","Precio por kilo","Precio por kilo","Precio por kilo","Precio por kilo")
-
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemTitle.text=titles[i]
-        viewHolder.itemprecio.text=precio[i]
-        viewHolder.itemImagen.setImageResource(image[i])
-        viewHolder.itemCaract.text=caract[i]
+        val fruta=frutaslista[i]
+        viewHolder.binWew(fruta)
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return if(frutaslista.size >0){
+         frutaslista.size
+        }else{
+            0
+        }
 
-            }
+    }
 }
+
+

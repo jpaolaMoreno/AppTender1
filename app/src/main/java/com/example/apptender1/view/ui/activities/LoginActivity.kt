@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.apptender1.R
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth.AuthStateListener
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -21,18 +22,19 @@ class LoginActivity : AppCompatActivity() {
         lateinit var recuperarbutton: TextView
 
         private lateinit var firebaseAuth: FirebaseAuth
-
+        private lateinit var authStateListener:FirebaseAuth.AuthStateListener
+        @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_login)
-            firebaseAuth= Firebase.auth
+
 
             iniciobutton = findViewById(R.id.BInicio)
             registrobutton = findViewById(R.id.BRegistro)
             recuperarbutton = findViewById(R.id.BRecuperar)
-
             val correo=findViewById<EditText>(R.id.LoginCorreo)
             val contrasena=findViewById<EditText>(R.id.LoginContrasena)
+            firebaseAuth= Firebase.auth
 
             iniciobutton.setOnClickListener {
                 login(correo.text.toString(), contrasena.text.toString())
@@ -50,11 +52,12 @@ class LoginActivity : AppCompatActivity() {
 
         private fun login(correo:String, contrasena:String){
             firebaseAuth.signInWithEmailAndPassword(correo, contrasena)
-                .addOnCompleteListener(this){
-                        task-> if(task.isSuccessful){
+                .addOnCompleteListener(this){ task->
+                         if(task.isSuccessful){
                             val user=firebaseAuth.currentUser
-                            Toast.makeText(baseContext,user?.uid.toString(),Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this,HomeActivity::class.java))
+                            Toast.makeText(baseContext,user?.uid.toString(), Toast.LENGTH_SHORT).show()
+                             val i=Intent(this, HomeActivity::class.java)
+                            startActivity(i)
                         }else{
                             Toast.makeText(baseContext, "Error en registro de datos", Toast.LENGTH_SHORT).show()
                         }

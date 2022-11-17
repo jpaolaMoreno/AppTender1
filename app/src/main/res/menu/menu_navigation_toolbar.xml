@@ -13,4 +13,10 @@
         android:icon="@drawable/historial">
     </item>
 
+    <item
+        android:id="@+id/cerrarsesion"
+        android:title="Cerrar sesión"
+        android:icon="@drawable/cerrarsesion">
+    </item>
+
 </menu>

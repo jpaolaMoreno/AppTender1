@@ -18,5 +18,11 @@
         android:title="Mis Pedidos"
         android:icon="@drawable/iconcarro">
     </item>
+    <item
+        android:id="@+id/cerrarsesion"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/cerrar_sesion">
+    </item>
+
 
 </menu>
