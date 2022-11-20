@@ -14,9 +14,6 @@
             android:id="@+id/action_homeFragment_to_misdatosFragment"
             app:destination="@id/misdatosFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_mipedidoFragment"
-            app:destination="@id/mipedidoFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_tiendaFragment"
             app:destination="@id/tiendaFragment" />
         <action
@@ -28,17 +25,15 @@
         <action
             android:id="@+id/action_homeFragment_to_mapaFragment"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/misdatosFragment"
         android:name="com.example.apptender1.view.ui.fragments.misdatosFragment"
         android:label="fragment_misdatos"
         tools:layout="@layout/fragment_misdatos" />
-    <fragment
-        android:id="@+id/mipedidoFragment"
-        android:name="com.example.apptender1.view.ui.fragments.mipedidoFragment"
-        android:label="fragment_mipedido"
-        tools:layout="@layout/fragment_mipedido" />
     <fragment
         android:id="@+id/tiendaFragment"
         android:name="com.example.apptender1.view.ui.fragments.tiendaFragment"
@@ -47,9 +42,6 @@
         <action
             android:id="@+id/action_tiendaFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_tiendaFragment_to_mipedidoFragment"
-            app:destination="@id/mipedidoFragment" />
         <action
             android:id="@+id/action_tiendaFragment_to_misdatosFragment"
             app:destination="@id/misdatosFragment" />
@@ -68,6 +60,15 @@
         <action
             android:id="@+id/action_tiendaFragment_to_mapaFragment2"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_comprasFragment2"
+            app:destination="@id/comprasFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_comprasFragment3"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/ajustesFragment"
@@ -83,20 +84,14 @@
             android:id="@+id/action_comentariosFragment_to_ajustesFragment"
             app:destination="@id/ajustesFragment" />
         <action
-            android:id="@+id/action_comentariosFragment_to_mipedidoFragment"
-            app:destination="@id/mipedidoFragment" />
-        <action
-            android:id="@+id/action_comentariosFragment_to_mipedidoFragment2"
-            app:destination="@id/mipedidoFragment" />
-        <action
             android:id="@+id/action_comentariosFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <action
             android:id="@+id/action_comentariosFragment_to_misdatosFragment"
             app:destination="@id/misdatosFragment" />
         <action
-            android:id="@+id/action_comentariosFragment_to_mipedidoFragment3"
-            app:destination="@id/mipedidoFragment" />
+            android:id="@+id/action_comentariosFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <activity
         android:id="@+id/loginActivity"
@@ -107,4 +102,13 @@
         android:id="@+id/mapaFragment"
         android:name="com.example.apptender1.view.ui.fragments.MapaFragment"
         android:label="MapaFragment" />
+    <fragment
+        android:id="@+id/comprasFragment"
+        android:name="com.example.apptender1.view.ui.fragments.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" >
+        <action
+            android:id="@+id/action_comprasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

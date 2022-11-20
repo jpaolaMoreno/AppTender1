@@ -27,7 +27,7 @@ class comentariosFragment : Fragment() {
             when (it.itemId) {
                 R.id.home -> findNavController().navigate(R.id.action_comentariosFragment_to_homeFragment)
                 R.id.perfil -> findNavController().navigate(R.id.action_comentariosFragment_to_misdatosFragment)
-                R.id.carro -> findNavController().navigate(R.id.action_comentariosFragment_to_mipedidoFragment)
+                R.id.carro -> findNavController().navigate(R.id.action_comentariosFragment_to_comprasFragment)
             }
         }
 

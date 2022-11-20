@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
         }
         val cardpedido = view.findViewById<ImageView>(R.id.cardCarro)
         cardpedido.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_mipedidoFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_comprasFragment)
 
         }
         val cardatos = view.findViewById<ImageView>(R.id.cardDatos)

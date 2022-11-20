@@ -1,45 +1,43 @@
 package com.example.apptender1.view.adapter
 
 import android.content.Context
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ExpandableListView.OnChildClickListener
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.apptender1.R
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.apptender1.R
+import com.example.apptender1.model.compras
 import com.example.apptender1.model.frutas
 import com.squareup.picasso.Picasso
-import java.text.FieldPosition
 
-class LibraryAdapter(private val context:Context, var clickListener: OnBookItemClickListener):RecyclerView.Adapter<LibraryAdapter.ViewHolder>(){
+class ComprasAdapter(private val context: Context, var clickListener: OnComprasItemClickListener):
+    RecyclerView.Adapter<ComprasAdapter.ViewHolder>(){
 
-    private var frutaslista= mutableListOf<frutas>()
+    private var frutaslista= mutableListOf<compras>()
 
-    fun setListData(data:MutableList<frutas>){
+    fun setListData(data:MutableList<compras>){
         frutaslista=data
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
 
-        val v= LayoutInflater.from(viewGroup.context).inflate(R.layout.car_view_librery, viewGroup, false)
+        val v= LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_compras, viewGroup, false)
         return ViewHolder(v)
 
     }
 
-    inner class ViewHolder(ItemView: View):RecyclerView.ViewHolder(ItemView) {
-        fun binWew(fruta: frutas, action: OnBookItemClickListener) {
+    inner class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView) {
+        fun binWew(fruta: compras, action: OnComprasItemClickListener) {
 
             itemView.findViewById<TextView>(R.id.tittle).text = fruta.titulo
             itemView.findViewById<TextView>(R.id.precio).text = fruta.precio
             Picasso.with(context).load(fruta.image).into(itemView.findViewById<ImageView>(R.id.image))
             itemView.findViewById<TextView>(R.id.descripcion).text = fruta.descripcion
-            val btncarrito=itemView.findViewById<ImageButton>(R.id.carrito)
-            btncarrito.setOnClickListener {
+            val btneliminar=itemView.findViewById<ImageButton>(R.id.eliminar)
+            btneliminar.setOnClickListener {
                 action.onItemclick(fruta, adapterPosition)
             }
 
@@ -53,7 +51,7 @@ class LibraryAdapter(private val context:Context, var clickListener: OnBookItemC
 
     override fun getItemCount(): Int {
         return if(frutaslista.size >0){
-         frutaslista.size
+            frutaslista.size
         }else{
             0
         }
@@ -61,8 +59,6 @@ class LibraryAdapter(private val context:Context, var clickListener: OnBookItemC
     }
 }
 
-interface OnBookItemClickListener{
-    fun onItemclick(fruta: frutas, position: Int)
+interface OnComprasItemClickListener{
+    fun onItemclick(fruta: compras, position: Int)
 }
-
-
